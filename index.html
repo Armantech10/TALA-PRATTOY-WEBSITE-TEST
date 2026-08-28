@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tala Prattoy | Contemporary Cultural Art & Installation</title>
+  <meta name="description" content="Tala Prattoy - Renowned contemporary public art installation, architecture, and cultural exhibition in Kolkata." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#E50914',
+              'red-hover': '#F4222D',
+              'red-glow': 'rgba(229, 9, 20, 0.35)',
+            },
+            dark: {
+              950: '#000000',
+              900: '#070707',
+              850: '#0E0E0E',
+              800: '#121212',
+              750: '#161616',
+              700: '#222222',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-black text-white antialiased selection:bg-[#E50914] selection:text-white">
+
+  <!-- ==========================================================================
+       1. HEADER / NAVBAR (Figma Reference)
+       ========================================================================== -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-glass border-b border-white/5">
+    <div class="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-16">
+      <div class="flex items-center justify-between h-24">
+        
+        <!-- Tala Prattoy Brand Logo (Includes flame and text) -->
+        <a href="#home" class="flex items-center group focus:outline-none" aria-label="Tala Prattoy Home">
+          <img src="assets/logo.png" alt="Tala Prattoy" class="h-10 w-auto object-contain shrink-0" />
+        </a>
+
+        <!-- Centered Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 lg:space-x-12" aria-label="Primary Navigation">
+          <a href="#about" class="text-sm text-neutral-300 hover:text-white font-medium transition-colors focus:outline-none">About</a>
+          <a href="#discover" class="text-sm text-neutral-300 hover:text-white font-medium transition-colors focus:outline-none">Service</a>
+          <a href="#gallery" class="text-sm text-neutral-300 hover:text-white font-medium transition-colors focus:outline-none">Album</a>
+          <a href="#timeline" class="text-sm text-neutral-300 hover:text-white font-medium transition-colors focus:outline-none">Stories</a>
+          <a href="#news" class="text-sm text-neutral-300 hover:text-white font-medium transition-colors focus:outline-none">Blog</a>
+        </nav>
+
+        <!-- Right Side CTA Button -->
+        <div class="hidden md:flex items-center">
+          <a href="#contact" class="btn-outline-pill">
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu" class="p-2 rounded-lg text-neutral-400 hover:text-white hover:bg-white/10 focus:outline-none">
+            <svg id="hamburger-icon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden menu-hidden bg-black/95 border-b border-neutral-800 px-6 pt-3 pb-6 space-y-2">
+      <a href="#about" class="mobile-nav-link block py-2 text-sm text-neutral-300 hover:text-red-500 transition-colors">About</a>
+      <a href="#discover" class="mobile-nav-link block py-2 text-sm text-neutral-300 hover:text-red-500 transition-colors">Service</a>
+      <a href="#gallery" class="mobile-nav-link block py-2 text-sm text-neutral-300 hover:text-red-500 transition-colors">Album</a>
+      <a href="#timeline" class="mobile-nav-link block py-2 text-sm text-neutral-300 hover:text-red-500 transition-colors">Stories</a>
+      <a href="#news" class="mobile-nav-link block py-2 text-sm text-neutral-300 hover:text-red-500 transition-colors">Blog</a>
+      <a href="#contact" class="mobile-nav-link block text-center py-2.5 mt-3 text-xs font-semibold text-[#E50914] bg-white rounded-full">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO / HOME SECTION (Figma Reference)
+         ========================================================================== -->
+    <section id="home" class="relative min-h-[760px] lg:min-h-[840px] flex flex-col justify-end pt-28 pb-16 overflow-hidden bg-black">
+      
+      <!-- 5-Panel Artwork Collage (Figma Reference Image 1) -->
+      <div class="hero-artwork-collage" aria-hidden="true">
+        <!-- Panel 1: Far Left -->
+        <div class="hero-artwork-panel">
+          <img src="assets/Rectangle 66.png" alt="Tala Prattoy Installation 1" class="hero-panel-img" />
+        </div>
+        <!-- Panel 2: Mid Left -->
+        <div class="hero-artwork-panel">
+          <img src="assets/Rectangle 50.png" alt="Tala Prattoy Installation 2" class="hero-panel-img" />
+        </div>
+        <!-- Panel 3: Center (The Eye) -->
+        <div class="hero-artwork-panel">
+          <img src="assets/Rectangle 49.png" alt="Tala Prattoy Eye Installation" class="hero-panel-img" />
+        </div>
+        <!-- Panel 4: Mid Right -->
+        <div class="hero-artwork-panel">
+          <img src="assets/Rectangle 55.png" alt="Tala Prattoy Installation 4" class="hero-panel-img" />
+        </div>
+        <!-- Panel 5: Far Right -->
+        <div class="hero-artwork-panel">
+          <img src="assets/Rectangle 56.png" alt="Tala Prattoy Installation 5" class="hero-panel-img" />
+        </div>
+      </div>
+
+      <!-- Black Gradient Overlay (Above artwork, below text/buttons) -->
+      <div class="hero-gradient-overlay"></div>
+
+      <!-- Hero Content (Centered) -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center pb-2">
+        
+        <!-- Large Hero Title: Tala Prattoy -->
+        <h1 class="font-sans font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-none mb-8 drop-shadow-2xl">
+          Tala Prattoy
+        </h1>
+
+        <!-- Hero Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="#objective" class="btn-white-pill">
+            Art Walkthrough
+          </a>
+          <a href="#contact" class="btn-dark-pill">
+            Privileged Entry
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         3. ABOUT TALA SECTION (Figma Screenshot 2)
+         Asymmetric 2-column layout: Text + Red portal on left, Stacked Blue figure & temple on right
+         ========================================================================== -->
+    <section id="about" class="py-16 md:py-24 bg-black border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          
+          <!-- Left Column: Narrative Content & Red Tunnel Artwork (Rectangle 40.png) -->
+          <div class="lg:col-span-6 space-y-6">
+            <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">
+              About <span class="text-white font-extrabold">Tala</span>
+            </h2>
+
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global. Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival.
+            </p>
+
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
+            </p>
+
+            <!-- Red Portal / Circular Installation Image: Rectangle 40.png -->
+            <div class="w-full aspect-[16/11] rounded-xl overflow-hidden img-frame mt-6">
+              <img src="assets/Rectangle 40.png" alt="Tala Prattoy Red Portal Installation" class="figma-img" />
+            </div>
+          </div>
+
+          <!-- Right Column: Stacked Artwork Images (Rectangle 38.png & Rectangle 39.png) -->
+          <div class="lg:col-span-6 space-y-6">
+            <!-- Top Image: Seated Blue Figure (Rectangle 38.png) -->
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 38.png" alt="Tala Prattoy Blue Seated Installation" class="figma-img" />
+            </div>
+
+            <!-- Bottom Image: Golden Illuminated Temple Sanctuary (Rectangle 39.png) -->
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 39.png" alt="Tala Prattoy Golden Temple Sanctuary" class="figma-img" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         4. DISCOVER TALA SECTION (Figma Screenshot 2)
+         Video artwork thumbnail, narrative with Know More CTA & 4-stat statistics card
+         ========================================================================== -->
+    <section id="discover" class="py-16 md:py-24 bg-[#080808] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center mb-16">
+          
+          <!-- Left Column: Video Artwork Card with Play Button (Group 1171274824.png) -->
+          <div class="lg:col-span-6 order-2 lg:order-1">
+            <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden img-frame group cursor-pointer">
+              <img src="assets/Group 1171274824.png" alt="Discover Tala Showcase Video" class="figma-img group-hover:scale-105" />
+              <!-- Circular Play Icon Overlay -->
+              <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-all">
+                <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Heading, Description, CTA & Carousel Indicators -->
+          <div class="lg:col-span-6 space-y-5 order-1 lg:order-2">
+            <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">
+              Discover <span class="text-white font-extrabold">Tala</span>
+            </h2>
+
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global. Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival.
+            </p>
+
+            <!-- Know More CTA Button -->
+            <div class="pt-2">
+              <a href="#about" class="btn-white-pill">
+                Know More
+              </a>
+            </div>
+
+            <!-- Carousel Dot Indicators -->
+            <div class="flex items-center space-x-2 pt-2">
+              <button class="discover-dot w-5 h-1.5 rounded-full bg-[#E50914] transition-all" aria-label="Slide 1"></button>
+              <button class="discover-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Slide 2"></button>
+              <button class="discover-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Slide 3"></button>
+              <button class="discover-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Slide 4"></button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Information / Statistics Card Bar (Lorem Ipsum - 4 metrics in 2x2 grid) -->
+        <div class="rounded-2xl bg-[#121212] border border-white/5 p-6 sm:p-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-6">
+              <h3 class="font-sans font-bold text-xl sm:text-2xl text-white mb-2">
+                Lorem <span class="font-light text-neutral-300">Ipsum</span>
+              </h3>
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-xl">
+                Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival.
+              </p>
+            </div>
+
+            <div class="lg:col-span-6 grid grid-cols-2 gap-y-6 gap-x-8 justify-items-start lg:justify-items-end">
+              <!-- Stat 1 -->
+              <div>
+                <div class="font-sans font-extrabold text-2xl sm:text-3xl text-white">500K+</div>
+                <div class="text-[11px] text-neutral-400 font-medium">Existing Partnerships</div>
+              </div>
+              <!-- Stat 2 -->
+              <div>
+                <div class="font-sans font-extrabold text-2xl sm:text-3xl text-white">5M</div>
+                <div class="text-[11px] text-neutral-400 font-medium">Existing Partnerships</div>
+              </div>
+              <!-- Stat 3 -->
+              <div>
+                <div class="font-sans font-extrabold text-2xl sm:text-3xl text-white">100K+</div>
+                <div class="text-[11px] text-neutral-400 font-medium">Existing Partnerships</div>
+              </div>
+              <!-- Stat 4 -->
+              <div>
+                <div class="font-sans font-extrabold text-2xl sm:text-3xl text-white">5M</div>
+                <div class="text-[11px] text-neutral-400 font-medium">Award Winning</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         5. TALA THROUGH THE YEARS SECTION
+         Vertical timeline with alternating milestones (2024 to 2017) & red diamond markers
+         ========================================================================== -->
+    <section id="timeline" class="py-20 md:py-28 bg-black border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <h2 class="font-sans font-bold text-3xl sm:text-5xl text-white tracking-tight">
+            Tala Through the <span class="font-extrabold text-white">Years</span>
+          </h2>
+        </div>
+
+        <!-- Vertical Timeline Container -->
+        <div class="relative max-w-5xl mx-auto">
+          <!-- Central Connecting Vertical Line -->
+          <div class="timeline-stem md:timeline-stem-desktop"></div>
+
+          <div class="space-y-16 md:space-y-24">
+
+            <!-- TIMELINE 2024 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <!-- Left Side Text -->
+              <div class="w-full md:w-1/2 md:pr-14 pl-8 md:pl-0 text-left md:text-right mb-6 md:mb-0 order-2 md:order-1">
+                <span class="font-sans font-bold text-2xl md:text-3xl text-white block mb-2">2024</span>
+                <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+                  Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
+                </p>
+              </div>
+
+              <!-- Diamond Marker -->
+              <div class="absolute left-3.5 md:left-[45%] -translate-x-1/2 diamond-marker z-20 order-1"></div>
+
+              <!-- Right Side Image (Rectangle 53 (1).png) -->
+              <div class="w-full md:w-1/2 md:pl-14 pl-8 md:pl-0 order-3">
+                <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+                  <img src="assets/Rectangle 53 (1).png" alt="Tala Prattoy 2024 Installation" class="figma-img" />
+                </div>
+              </div>
+            </div>
+
+            <!-- TIMELINE 2023 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <!-- Left Side Image (Rectangle 55 (1).png) -->
+              <div class="w-full md:w-1/2 md:pr-14 pl-8 md:pl-0 mb-6 md:mb-0 order-3 md:order-1">
+                <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+                  <img src="assets/Rectangle 55 (1).png" alt="Tala Prattoy 2023 Installation" class="figma-img" />
+                </div>
+              </div>
+
+              <!-- Diamond Marker -->
+              <div class="absolute left-3.5 md:left-[45%] -translate-x-1/2 diamond-marker z-20 order-1"></div>
+
+              <!-- Right Side Text -->
+              <div class="w-full md:w-1/2 md:pl-14 pl-8 md:pl-0 text-left order-2 md:order-3">
+                <span class="font-sans font-bold text-2xl md:text-3xl text-white block mb-2">2023</span>
+                <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+                  Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
+                </p>
+              </div>
+            </div>
+
+            <!-- TIMELINE 2022 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <!-- Left Side Text -->
+              <div class="w-full md:w-1/2 md:pr-14 pl-8 md:pl-0 text-left md:text-right mb-6 md:mb-0 order-2 md:order-1">
+                <span class="font-sans font-bold text-2xl md:text-3xl text-white block mb-2">2022</span>
+                <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+                  Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
+                </p>
+              </div>
+
+              <!-- Diamond Marker -->
+              <div class="absolute left-3.5 md:left-[45%] -translate-x-1/2 diamond-marker z-20 order-1"></div>
+
+              <!-- Right Side Image (Rectangle 56 (1).png) -->
+              <div class="w-full md:w-1/2 md:pl-14 pl-8 md:pl-0 order-3">
+                <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+                  <img src="assets/Rectangle 56 (1).png" alt="Tala Prattoy 2022 Installation" class="figma-img" />
+                </div>
+              </div>
+            </div>
+
+            <!-- TIMELINE 2021 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <!-- Left Side Image (Rectangle 58 (1).png) -->
+              <div class="w-full md:w-1/2 md:pr-14 pl-8 md:pl-0 mb-6 md:mb-0 order-3 md:order-1">
+                <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+                  <img src="assets/Rectangle 58 (1).png" alt="Tala Prattoy 2021 Installation" class="figma-img" />
+                </div>
+              </div>
+
+              <!-- Diamond Marker -->
+              <div class="absolute left-3.5 md:left-[45%] -translate-x-1/2 diamond-marker z-20 order-1"></div>
+
+              <!-- Right Side Text -->
+              <div class="w-full md:w-1/2 md:pl-14 pl-8 md:pl-0 text-left order-2 md:order-3">
+                <span class="font-sans font-bold text-2xl md:text-3xl text-white block mb-2">2021</span>
+                <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+                  Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
+                </p>
+              </div>
+            </div>
+
+            <!-- TIMELINE 2019 / 2018 / 2017 (Archive Milestones) -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <!-- Left Side Text -->
+              <div class="w-full md:w-1/2 md:pr-14 pl-8 md:pl-0 text-left md:text-right mb-6 md:mb-0 order-2 md:order-1">
+                <span class="font-sans font-bold text-2xl md:text-3xl text-white block mb-2">2019 &mdash; 2017</span>
+                <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+                  Pioneering foundational conceptual artworks and site-specific sculptural storytelling that established Tala Prattoy as a globally recognized open-air cultural installation.
+                </p>
+              </div>
+
+              <!-- Diamond Marker -->
+              <div class="absolute left-3.5 md:left-[45%] -translate-x-1/2 diamond-marker z-20 order-1"></div>
+
+              <!-- Right Side Image (Rectangle 64.png) -->
+              <div class="w-full md:w-1/2 md:pl-14 pl-8 md:pl-0 order-3">
+                <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+                  <img src="assets/Rectangle 64.png" alt="Tala Prattoy Retrospective Milestone" class="figma-img" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         6. OBJECTIVE & FEATURES SECTION (Figma Screenshot 3)
+         ========================================================================== -->
+    <section id="objective" class="py-20 md:py-28 bg-[#080808] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-16">
+          <h2 class="font-sans font-bold text-3xl sm:text-5xl text-white tracking-tight mb-3">
+            Objective & <span class="font-bold text-white">features</span>
+          </h2>
+          <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+            Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+          </p>
+        </div>
+
+        <!-- 2x2 Features Grid (Screenshot 3) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+          
+          <!-- Card 1: Durga Puja Art 2024 (Group 1171274879.png) -->
+          <div class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274879.png" alt="Durga Puja Art 2024" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-xl text-[#E50914]">Durga Puja Art 2024</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Tala Prattoy, endeavouring towards global art forever, projects this year's Durga Puja Art as celebrating the journey of a Durga Puja Artist. It thus highlights Kahan — a narration by Susanta Paul, the Artist of high repute.
+            </p>
+          </div>
+
+          <!-- Card 2: Watch Art with Artist (Group 1171274824.png) -->
+          <div class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274824.png" alt="Watch Art with Artist" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-xl text-[#E50914]">Watch Art with Artist</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              2024 introduces a never-seen-before guided walkthrough in Tala Prattoy Durga Puja Art venue where visitors may, in groups, see the artworks through a smooth walk with a guide. Here the guide is the Artist himself. This programme is chargeable and the visitors have to buy tickets for booking the slots of different times.
+            </p>
+          </div>
+
+          <!-- Card 3: Encouraging Craftsmanship (Group 1171274830.png) -->
+          <div class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274830.png" alt="Encouraging Craftsmanship" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-xl text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </div>
+
+          <!-- Card 4: Promotion of Installation Art (Group 1171274831.png) -->
+          <div class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274831.png" alt="Promotion of Installation Art" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-xl text-[#E50914]">Promotion of Installation Art</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Installation Art is an artistic genre of multi-dimensional works which are generally site-specific. It's aim — to see a generation of exquisite artists to emerge.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Large Full-Width Video Banner (Screenshot 3 - Golden Sculptures with Center Play Button) -->
+        <div class="relative w-full aspect-[16/8] md:aspect-[21/9] rounded-2xl overflow-hidden img-frame group cursor-pointer">
+          <img src="assets/Group 1171274829 (1).png" alt="Tala Prattoy Master Installation Video" class="figma-img group-hover:scale-105" />
+          <!-- Large Circular Play Button Overlay in Center -->
+          <div class="absolute inset-0 flex items-center justify-center bg-black/35 group-hover:bg-black/20 transition-all">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/60 flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-2xl">
+              <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         7. OUR VISION SECTION (Artwork feature highlight)
+         ========================================================================== -->
+    <section id="vision" class="py-16 bg-black border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <!-- Artwork Image -->
+          <div class="lg:col-span-6">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 38.png" alt="Our Vision Installation" class="figma-img" />
+            </div>
+          </div>
+
+          <!-- Vision Narrative -->
+          <div class="lg:col-span-6 space-y-4">
+            <h2 class="font-sans font-bold text-2xl sm:text-3xl text-white tracking-tight">
+              Our <span class="font-extrabold text-white">Vision</span>
+            </h2>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         8. AWARD SECTION (Figma Screenshot 4)
+         ========================================================================== -->
+    <section id="award" class="py-16 md:py-24 bg-[#080808] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <!-- Section Header -->
+        <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white mb-3">
+          Award
+        </h2>
+        <p class="text-neutral-400 text-xs sm:text-sm max-w-2xl mx-auto mb-12 leading-relaxed">
+          Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+        </p>
+
+        <!-- Award Logos Row (5 identical massArt red circular badges in horizontal row) -->
+        <div class="flex items-center justify-center gap-4 sm:gap-6 mb-12">
+          <!-- Left Arrow -->
+          <button id="award-prev-btn" class="w-8 h-8 rounded-full border border-white/20 hover:border-[#E50914] text-neutral-400 hover:text-white flex items-center justify-center transition-colors" aria-label="Previous Award">
+            &larr;
+          </button>
+
+          <!-- Scrolling Logo Track -->
+          <div id="award-slider-track" class="flex items-center space-x-6 sm:space-x-8 overflow-x-auto hide-scrollbar py-2">
+            <!-- Badge 1 -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
+              <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
+              <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
+            </div>
+            <!-- Badge 2 -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
+              <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
+              <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
+            </div>
+            <!-- Badge 3 -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
+              <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
+              <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
+            </div>
+            <!-- Badge 4 -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
+              <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
+              <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
+            </div>
+            <!-- Badge 5 -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
+              <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
+              <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
+            </div>
+          </div>
+
+          <!-- Right Arrow -->
+          <button id="award-next-btn" class="w-8 h-8 rounded-full border border-white/20 hover:border-[#E50914] text-neutral-400 hover:text-white flex items-center justify-center transition-colors" aria-label="Next Award">
+            &rarr;
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         9. ADVERTISE WITH US SECTION (Figma Screenshot 4)
+         ========================================================================== -->
+    <section id="advertise" class="py-12 bg-black">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-2xl bg-[#141414] border border-white/5 p-8 sm:p-12">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+            
+            <div class="max-w-2xl">
+              <h2 class="font-sans font-bold text-2xl sm:text-3xl text-white mb-3">
+                Advertise <span class="font-bold text-white">With Us</span>
+              </h2>
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+                Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival.
+              </p>
+            </div>
+
+            <div class="shrink-0">
+              <a href="#contact" class="btn-white-pill">
+                Apply Now
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         10. GALLERY SECTION (Figma Screenshots 4 & 5)
+         Exact 8-image composition in 4 asymmetric rows matching Figma layout
+         ========================================================================== -->
+    <section id="gallery" class="py-20 md:py-28 bg-[#080808] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="font-sans font-bold text-3xl sm:text-5xl text-white mb-3">
+            Gallery
+          </h2>
+          <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+            Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+          </p>
+        </div>
+
+        <!-- 4 Asymmetric Rows of Exactly 8 Images (Figma Screenshots 4 & 5) -->
+        <div class="space-y-6">
+          
+          <!-- ROW 1 (Screenshot 4): Image 1 (Golden Deity in Arch) + Image 2 (Altar with Candles) -->
+          <div class="gallery-row">
+            <!-- Image 1 (Wide ~58%): Rectangle 45.png -->
+            <div class="gallery-flex-wide h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 45.png" alt="Tala Prattoy Golden Deity Arch Gallery" class="figma-img" />
+            </div>
+            <!-- Image 2 (Narrow ~42%): Rectangle 48.png -->
+            <div class="gallery-flex-narrow h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 48.png" alt="Tala Prattoy Altar with Candles Gallery" class="figma-img" />
+            </div>
+          </div>
+
+          <!-- ROW 2 (Screenshot 4): Image 3 (Blue/Red Altar) + Image 4 (Terracotta Sculpture) -->
+          <div class="gallery-row">
+            <!-- Image 3 (Narrow ~42%): Rectangle 47.png -->
+            <div class="gallery-flex-narrow h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 47.png" alt="Tala Prattoy Altar Shrine Gallery" class="figma-img" />
+            </div>
+            <!-- Image 4 (Wide ~58%): Rectangle 46.png -->
+            <div class="gallery-flex-wide h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 46.png" alt="Tala Prattoy Terracotta Sculpture Gallery" class="figma-img" />
+            </div>
+          </div>
+
+          <!-- ROW 3 (Screenshot 4 & 5): Image 5 (Golden Temple Interior) + Image 6 (Arched Cavern) -->
+          <div class="gallery-row">
+            <!-- Image 5 (Wide ~58%): Rectangle 51.png -->
+            <div class="gallery-flex-wide h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 51.png" alt="Tala Prattoy Temple Interior Gallery" class="figma-img" />
+            </div>
+            <!-- Image 6 (Narrow ~42%): Rectangle 52.png -->
+            <div class="gallery-flex-narrow h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 52.png" alt="Tala Prattoy Cavern Entrance Gallery" class="figma-img" />
+            </div>
+          </div>
+
+          <!-- ROW 4 (Screenshot 5): Image 7 (Golden Spiral Ribs) + Image 8 (The Giant Eye) -->
+          <div class="gallery-row">
+            <!-- Image 7 (Narrow ~42%): Rectangle 50.png -->
+            <div class="gallery-flex-narrow h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 50.png" alt="Tala Prattoy Spiral Architecture Gallery" class="figma-img" />
+            </div>
+            <!-- Image 8 (Wide ~58%): Rectangle 49.png (The Eye) -->
+            <div class="gallery-flex-wide h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
+              <img src="assets/Rectangle 49.png" alt="Tala Prattoy Eye Art Installation Gallery" class="figma-img" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         11. TALA IN NEWS SECTION (Figma Screenshot 5)
+         ========================================================================== -->
+    <section id="news" class="py-20 md:py-28 bg-black border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="mb-14">
+          <h2 class="font-sans font-bold text-3xl sm:text-5xl text-white tracking-tight">
+            Tala In <span class="font-extrabold text-white">News</span>
+          </h2>
+        </div>
+
+        <!-- 3 Columns x 2 Rows News Grid (Screenshot 5) -->
+        <div id="news-slider-track" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
+          
+          <!-- News Card 1: Group 1171274841.png -->
+          <article class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274841.png" alt="Tala In News: Encouraging Craftsmanship 1" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-lg text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </article>
+
+          <!-- News Card 2: Group 1171274842.png -->
+          <article class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274842.png" alt="Tala In News: Encouraging Craftsmanship 2" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-lg text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </article>
+
+          <!-- News Card 3: Group 1171274843.png -->
+          <article class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274843.png" alt="Tala In News: Encouraging Craftsmanship 3" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-lg text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </article>
+
+          <!-- News Card 4: Group 1171274844.png -->
+          <article class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274844.png" alt="Tala In News: Encouraging Craftsmanship 4" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-lg text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </article>
+
+          <!-- News Card 5: Group 1171274845 (1).png -->
+          <article class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274845 (1).png" alt="Tala In News: Encouraging Craftsmanship 5" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-lg text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </article>
+
+          <!-- News Card 6: Group 1171274846.png -->
+          <article class="space-y-4">
+            <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
+              <img src="assets/Group 1171274846.png" alt="Tala In News: Encouraging Craftsmanship 6" class="figma-img" />
+            </div>
+            <h3 class="font-sans font-bold text-lg text-[#E50914]">Encouraging Craftsmanship</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Carousel Dot Indicators -->
+        <div class="flex items-center justify-center space-x-2 mt-8">
+          <button class="news-dot w-6 h-1.5 rounded-full bg-[#E50914] transition-all" aria-label="Page 1"></button>
+          <button class="news-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Page 2"></button>
+          <button class="news-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Page 3"></button>
+          <button class="news-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Page 4"></button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         12. FREQUENTLY ASKED QUESTIONS SECTION
+         ========================================================================== -->
+    <section id="faq" class="py-20 md:py-28 bg-[#080808] border-t border-white/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="mb-12">
+          <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">
+            Frequently <span class="font-light text-neutral-200">Asked Questions</span>
+          </h2>
+        </div>
+
+        <!-- Accordion Items -->
+        <div class="space-y-4">
+          
+          <!-- FAQ 1 (Active by default matching Figma) -->
+          <div class="faq-item active rounded-xl bg-[#121212] border border-white/5 p-5">
+            <button type="button" class="faq-header w-full flex items-center justify-between text-left focus:outline-none" aria-expanded="true">
+              <div class="flex items-center space-x-3">
+                <span class="text-[#E50914] font-bold text-sm">&rarr;</span>
+                <span class="font-sans font-medium text-sm sm:text-base text-white">Do you creative design for website</span>
+              </div>
+              <svg class="faq-chevron w-4 h-4 text-neutral-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed pl-6">
+                Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item rounded-xl bg-[#121212] border border-white/5 p-5">
+            <button type="button" class="faq-header w-full flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center space-x-3">
+                <span class="text-[#E50914] font-bold text-sm">&rarr;</span>
+                <span class="font-sans font-medium text-sm sm:text-base text-white">What is Tala Prattoy Durga Puja Art?</span>
+              </div>
+              <svg class="faq-chevron w-4 h-4 text-neutral-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed pl-6">
+                Tala Prattoy is an internationally renowned public contemporary art installation collective based in Kolkata, transforming seasonal festival architecture into site-specific museum-grade installations.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item rounded-xl bg-[#121212] border border-white/5 p-5">
+            <button type="button" class="faq-header w-full flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center space-x-3">
+                <span class="text-[#E50914] font-bold text-sm">&rarr;</span>
+                <span class="font-sans font-medium text-sm sm:text-base text-white">How can visitors attend the Art Walkthrough?</span>
+              </div>
+              <svg class="faq-chevron w-4 h-4 text-neutral-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed pl-6">
+                Guided walkthroughs led by Lead Artist Susanta Paul and master artisans are available through online pre-booking, offering scheduled slots for intimate sensory walkthroughs.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item rounded-xl bg-[#121212] border border-white/5 p-5">
+            <button type="button" class="faq-header w-full flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center space-x-3">
+                <span class="text-[#E50914] font-bold text-sm">&rarr;</span>
+                <span class="font-sans font-medium text-sm sm:text-base text-white">What are the entry timings and tickets?</span>
+              </div>
+              <svg class="faq-chevron w-4 h-4 text-neutral-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed pl-6">
+                General public access is open around the clock during festival week. Privileged Entry and Preview Show access passes for curators and media can be requested via our contact desk.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item rounded-xl bg-[#121212] border border-white/5 p-5">
+            <button type="button" class="faq-header w-full flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+              <div class="flex items-center space-x-3">
+                <span class="text-[#E50914] font-bold text-sm">&rarr;</span>
+                <span class="font-sans font-medium text-sm sm:text-base text-white">How can brands collaborate or advertise with Tala Prattoy?</span>
+              </div>
+              <svg class="faq-chevron w-4 h-4 text-neutral-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed pl-6">
+                Partners and sponsors can join our ecosystem through the 'Advertise With Us' section or by reaching out directly to our institutional team at info@talaprattoy.org.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         13. FOOTER SECTION (Figma Screenshot 5)
+         ========================================================================== -->
+    <footer id="contact" class="pt-20 pb-12 bg-[#121212] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+          
+          <!-- Left Column: Branding, Description & Newsletter -->
+          <div class="lg:col-span-5 space-y-6">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-2.5" aria-label="Tala Prattoy">
+              <img src="assets/logo.png" alt="Tala Prattoy" class="h-10 w-auto object-contain" />
+            </a>
+
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Lorem ipsum dolor sit amet, consec tetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.
+            </p>
+
+            <!-- Newsletter Signup Form -->
+            <div class="pt-2">
+              <h4 class="font-sans font-semibold text-xs text-white mb-2.5">Join Newsletters</h4>
+              <form id="newsletter-form" class="flex items-center max-w-sm rounded-lg bg-[#181818] border border-white/10 overflow-hidden focus-within:border-red-500 transition-colors">
+                <input type="email" id="newsletter-email" required placeholder="Insert your mail here" class="w-full px-4 py-2.5 bg-transparent text-xs text-white placeholder-neutral-500 focus:outline-none" />
+                <button type="submit" aria-label="Subscribe" class="px-4 py-2.5 bg-[#E50914] hover:bg-[#F4222D] text-white text-xs font-bold transition-colors">
+                  &rarr;
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column: Navigation Columns (Product, Media Group, Sitemap, Contact) -->
+          <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
+            
+            <!-- Column 1: Product -->
+            <div class="space-y-3">
+              <h4 class="font-sans font-semibold text-xs text-white">Product</h4>
+              <ul class="space-y-2 text-xs text-neutral-400">
+                <li><a href="#home" class="hover:text-white transition-colors">Movies</a></li>
+                <li><a href="#about" class="hover:text-white transition-colors">TV Show</a></li>
+                <li><a href="#gallery" class="hover:text-white transition-colors">Videos</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Media Group -->
+            <div class="space-y-3">
+              <h4 class="font-sans font-semibold text-xs text-white">Media Group</h4>
+              <ul class="space-y-2 text-xs text-neutral-400">
+                <li><a href="#news" class="hover:text-white transition-colors">Nice Studio</a></li>
+                <li><a href="#news" class="hover:text-white transition-colors">Nice News</a></li>
+                <li><a href="#news" class="hover:text-white transition-colors">Nice TV</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Sitemap -->
+            <div class="space-y-3">
+              <h4 class="font-sans font-semibold text-xs text-white">Sitemap</h4>
+              <ul class="space-y-2 text-xs text-neutral-400">
+                <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                <li><a href="#objective" class="hover:text-white transition-colors">Careers</a></li>
+                <li><a href="#news" class="hover:text-white transition-colors">Press</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div class="space-y-3">
+              <h4 class="font-sans font-semibold text-xs text-white">Contact</h4>
+              <ul class="space-y-2 text-[11px] text-neutral-400">
+                <li class="flex items-center gap-1.5">
+                  <span>&#9742;</span>
+                  <span>+271 386-647-3637</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span>&#9993;</span>
+                  <a href="mailto:ourstudio@hello.com" class="hover:text-white transition-colors">ourstudio@hello.com</a>
+                </li>
+                <li class="flex items-start gap-1.5 leading-tight">
+                  <span class="mt-0.5">&#128205;</span>
+                  <span>8819 Ohio St. South Gate, California 90280</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Footer Bottom Copyright Bar -->
+        <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+          <div>
+            Copyright &copy; 2024 massArt, Designed & Developed Ethically by Ethical Den
+          </div>
+          <div class="flex items-center space-x-4 text-neutral-400">
+            <a href="#home" class="hover:text-white transition-colors">Privacy Policy</a>
+            <span>&bull;</span>
+            <a href="#home" class="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
