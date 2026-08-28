@@ -40,10 +40,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-black text-white antialiased selection:bg-[#E50914] selection:text-white">
-
-  <!-- ==========================================================================
-       1. HEADER / NAVBAR (Figma Reference)
-       ========================================================================== -->
   <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-glass border-b border-white/5">
     <div class="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-16">
       <div class="flex items-center justify-between h-24">
@@ -99,9 +95,9 @@
     <!-- ==========================================================================
          2. HERO / HOME SECTION (Figma Reference)
          ========================================================================== -->
-    <section id="home" class="relative min-h-[760px] lg:min-h-[840px] flex flex-col justify-end pt-28 pb-16 overflow-hidden bg-black">
+    <section id="home" class="relative min-h-[629px] md:min-h-[760px] lg:min-h-[840px] flex flex-col justify-end pt-28 pb-12 md:pb-16 overflow-hidden bg-[#272727] md:bg-black">
       
-      <!-- 5-Panel Artwork Collage (Figma Reference Image 1) -->
+      <!-- 5-Panel Artwork Collage (Figma Reference Image 1 - Desktop only) -->
       <div class="hero-artwork-collage" aria-hidden="true">
         <!-- Panel 1: Far Left -->
         <div class="hero-artwork-panel">
@@ -125,19 +121,19 @@
         </div>
       </div>
 
-      <!-- Black Gradient Overlay (Above artwork, below text/buttons) -->
+      <!-- Black Gradient Overlay (Desktop only) -->
       <div class="hero-gradient-overlay"></div>
 
       <!-- Hero Content (Centered) -->
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center pb-2">
         
-        <!-- Large Hero Title: Tala Prattoy -->
-        <h1 class="font-sans font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-none mb-8 drop-shadow-2xl">
-          Tala Prattoy
+        <!-- Large Hero Title: 2 lines on mobile, single line on desktop -->
+        <h1 class="font-sans font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[1.08] md:leading-none mb-6 md:mb-8 drop-shadow-2xl">
+          Tala<br class="block md:hidden" /> Prattoy
         </h1>
 
         <!-- Hero Action Buttons -->
-        <div class="flex flex-wrap items-center justify-center gap-4">
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
           <a href="#objective" class="btn-white-pill">
             Art Walkthrough
           </a>
@@ -146,20 +142,33 @@
           </a>
         </div>
 
+        <!-- Follow Now & Social Icons (Mobile Only Matching Figma) -->
+        <div class="flex md:hidden items-center justify-center space-x-3 mt-6 text-neutral-400">
+          <span class="text-[11px] font-medium tracking-wide">follow now &rarr;</span>
+          <a href="#" class="hover:text-white transition-colors" aria-label="Facebook">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="hover:text-white transition-colors" aria-label="Instagram">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="hover:text-white transition-colors" aria-label="YouTube">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" class="hover:text-white transition-colors" aria-label="LinkedIn">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+
       </div>
     </section>
 
 
-    <!-- ==========================================================================
-         3. ABOUT TALA SECTION (Figma Screenshot 2)
-         Asymmetric 2-column layout: Text + Red portal on left, Stacked Blue figure & temple on right
-         ========================================================================== -->
     <section id="about" class="py-16 md:py-24 bg-black border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
-          <!-- Left Column: Narrative Content & Red Tunnel Artwork (Rectangle 40.png) -->
+          
           <div class="lg:col-span-6 space-y-6">
             <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">
               About <span class="text-white font-extrabold">Tala</span>
@@ -198,20 +207,17 @@
     </section>
 
 
-    <!-- ==========================================================================
-         4. DISCOVER TALA SECTION (Figma Screenshot 2)
-         Video artwork thumbnail, narrative with Know More CTA & 4-stat statistics card
-         ========================================================================== -->
+    
     <section id="discover" class="py-16 md:py-24 bg-[#080808] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center mb-16">
           
-          <!-- Left Column: Video Artwork Card with Play Button (Group 1171274824.png) -->
+         
           <div class="lg:col-span-6 order-2 lg:order-1">
             <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden img-frame group cursor-pointer">
               <img src="assets/Group 1171274824.png" alt="Discover Tala Showcase Video" class="figma-img group-hover:scale-105" />
-              <!-- Circular Play Icon Overlay -->
+           
               <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-all">
                 <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                   <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -220,7 +226,7 @@
             </div>
           </div>
 
-          <!-- Right Column: Heading, Description, CTA & Carousel Indicators -->
+          
           <div class="lg:col-span-6 space-y-5 order-1 lg:order-2">
             <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">
               Discover <span class="text-white font-extrabold">Tala</span>
@@ -230,14 +236,14 @@
               Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy's work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global. Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival.
             </p>
 
-            <!-- Know More CTA Button -->
+          
             <div class="pt-2">
               <a href="#about" class="btn-white-pill">
                 Know More
               </a>
             </div>
 
-            <!-- Carousel Dot Indicators -->
+           
             <div class="flex items-center space-x-2 pt-2">
               <button class="discover-dot w-5 h-1.5 rounded-full bg-[#E50914] transition-all" aria-label="Slide 1"></button>
               <button class="discover-dot w-2 h-1.5 rounded-full bg-neutral-600 hover:bg-neutral-400 transition-all" aria-label="Slide 2"></button>
@@ -248,7 +254,7 @@
 
         </div>
 
-        <!-- Information / Statistics Card Bar (Lorem Ipsum - 4 metrics in 2x2 grid) -->
+        
         <div class="rounded-2xl bg-[#121212] border border-white/5 p-6 sm:p-10">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
@@ -425,13 +431,10 @@
     </section>
 
 
-    <!-- ==========================================================================
-         6. OBJECTIVE & FEATURES SECTION (Figma Screenshot 3)
-         ========================================================================== -->
+    
     <section id="objective" class="py-20 md:py-28 bg-[#080808] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
+     
         <div class="max-w-3xl mb-16">
           <h2 class="font-sans font-bold text-3xl sm:text-5xl text-white tracking-tight mb-3">
             Objective & <span class="font-bold text-white">features</span>
@@ -441,10 +444,10 @@
           </p>
         </div>
 
-        <!-- 2x2 Features Grid (Screenshot 3) -->
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16">
           
-          <!-- Card 1: Durga Puja Art 2024 (Group 1171274879.png) -->
+       
           <div class="space-y-4">
             <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
               <img src="assets/Group 1171274879.png" alt="Durga Puja Art 2024" class="figma-img" />
@@ -455,7 +458,6 @@
             </p>
           </div>
 
-          <!-- Card 2: Watch Art with Artist (Group 1171274824.png) -->
           <div class="space-y-4">
             <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
               <img src="assets/Group 1171274824.png" alt="Watch Art with Artist" class="figma-img" />
@@ -466,7 +468,6 @@
             </p>
           </div>
 
-          <!-- Card 3: Encouraging Craftsmanship (Group 1171274830.png) -->
           <div class="space-y-4">
             <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
               <img src="assets/Group 1171274830.png" alt="Encouraging Craftsmanship" class="figma-img" />
@@ -477,7 +478,6 @@
             </p>
           </div>
 
-          <!-- Card 4: Promotion of Installation Art (Group 1171274831.png) -->
           <div class="space-y-4">
             <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
               <img src="assets/Group 1171274831.png" alt="Promotion of Installation Art" class="figma-img" />
@@ -490,10 +490,10 @@
 
         </div>
 
-        <!-- Large Full-Width Video Banner (Screenshot 3 - Golden Sculptures with Center Play Button) -->
+        
         <div class="relative w-full aspect-[16/8] md:aspect-[21/9] rounded-2xl overflow-hidden img-frame group cursor-pointer">
           <img src="assets/Group 1171274829 (1).png" alt="Tala Prattoy Master Installation Video" class="figma-img group-hover:scale-105" />
-          <!-- Large Circular Play Button Overlay in Center -->
+        
           <div class="absolute inset-0 flex items-center justify-center bg-black/35 group-hover:bg-black/20 transition-all">
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/60 flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-2xl">
               <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -505,21 +505,19 @@
     </section>
 
 
-    <!-- ==========================================================================
-         7. OUR VISION SECTION (Artwork feature highlight)
-         ========================================================================== -->
+    
     <section id="vision" class="py-16 bg-black border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <!-- Artwork Image -->
+       
           <div class="lg:col-span-6">
             <div class="w-full aspect-[16/10] rounded-xl overflow-hidden img-frame">
               <img src="assets/Rectangle 38.png" alt="Our Vision Installation" class="figma-img" />
             </div>
           </div>
 
-          <!-- Vision Narrative -->
+  
           <div class="lg:col-span-6 space-y-4">
             <h2 class="font-sans font-bold text-2xl sm:text-3xl text-white tracking-tight">
               Our <span class="font-extrabold text-white">Vision</span>
@@ -534,13 +532,11 @@
     </section>
 
 
-    <!-- ==========================================================================
-         8. AWARD SECTION (Figma Screenshot 4)
-         ========================================================================== -->
+   
     <section id="award" class="py-16 md:py-24 bg-[#080808] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        <!-- Section Header -->
+       
         <h2 class="font-sans font-bold text-3xl sm:text-4xl text-white mb-3">
           Award
         </h2>
@@ -548,43 +544,40 @@
           Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
         </p>
 
-        <!-- Award Logos Row (5 identical massArt red circular badges in horizontal row) -->
-        <div class="flex items-center justify-center gap-4 sm:gap-6 mb-12">
-          <!-- Left Arrow -->
+        <div class="flex items-center justify-center gap-4 sm:gap-6 mb-12"> 
           <button id="award-prev-btn" class="w-8 h-8 rounded-full border border-white/20 hover:border-[#E50914] text-neutral-400 hover:text-white flex items-center justify-center transition-colors" aria-label="Previous Award">
             &larr;
           </button>
 
-          <!-- Scrolling Logo Track -->
           <div id="award-slider-track" class="flex items-center space-x-6 sm:space-x-8 overflow-x-auto hide-scrollbar py-2">
-            <!-- Badge 1 -->
+
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
               <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
               <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
             </div>
-            <!-- Badge 2 -->
+        
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
               <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
               <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
             </div>
-            <!-- Badge 3 -->
+           
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
               <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
               <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
             </div>
-            <!-- Badge 4 -->
+            
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
               <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
               <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
             </div>
-            <!-- Badge 5 -->
+           
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E50914] flex flex-col items-center justify-center text-white shrink-0 shadow-lg">
               <span class="font-serif font-bold text-xl sm:text-2xl leading-none">m</span>
               <span class="text-[8px] sm:text-[9px] font-sans font-medium tracking-tighter mt-0.5">massArt</span>
             </div>
           </div>
 
-          <!-- Right Arrow -->
+        
           <button id="award-next-btn" class="w-8 h-8 rounded-full border border-white/20 hover:border-[#E50914] text-neutral-400 hover:text-white flex items-center justify-center transition-colors" aria-label="Next Award">
             &rarr;
           </button>
@@ -594,9 +587,6 @@
     </section>
 
 
-    <!-- ==========================================================================
-         9. ADVERTISE WITH US SECTION (Figma Screenshot 4)
-         ========================================================================== -->
     <section id="advertise" class="py-12 bg-black">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -625,14 +615,10 @@
     </section>
 
 
-    <!-- ==========================================================================
-         10. GALLERY SECTION (Figma Screenshots 4 & 5)
-         Exact 8-image composition in 4 asymmetric rows matching Figma layout
-         ========================================================================== -->
+    
     <section id="gallery" class="py-20 md:py-28 bg-[#080808] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
+       
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="font-sans font-bold text-3xl sm:text-5xl text-white mb-3">
             Gallery
@@ -641,29 +627,28 @@
             Learning provides the environment and inspiration to create and exhibit that brings people together to build connections to community.
           </p>
         </div>
-
-        <!-- 4 Asymmetric Rows of Exactly 8 Images (Figma Screenshots 4 & 5) -->
+ 
         <div class="space-y-6">
           
-          <!-- ROW 1 (Screenshot 4): Image 1 (Golden Deity in Arch) + Image 2 (Altar with Candles) -->
+          
           <div class="gallery-row">
-            <!-- Image 1 (Wide ~58%): Rectangle 45.png -->
+            
             <div class="gallery-flex-wide h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
               <img src="assets/Rectangle 45.png" alt="Tala Prattoy Golden Deity Arch Gallery" class="figma-img" />
             </div>
-            <!-- Image 2 (Narrow ~42%): Rectangle 48.png -->
+            
             <div class="gallery-flex-narrow h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
               <img src="assets/Rectangle 48.png" alt="Tala Prattoy Altar with Candles Gallery" class="figma-img" />
             </div>
           </div>
 
-          <!-- ROW 2 (Screenshot 4): Image 3 (Blue/Red Altar) + Image 4 (Terracotta Sculpture) -->
+          
           <div class="gallery-row">
-            <!-- Image 3 (Narrow ~42%): Rectangle 47.png -->
+          
             <div class="gallery-flex-narrow h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
               <img src="assets/Rectangle 47.png" alt="Tala Prattoy Altar Shrine Gallery" class="figma-img" />
             </div>
-            <!-- Image 4 (Wide ~58%): Rectangle 46.png -->
+          
             <div class="gallery-flex-wide h-64 sm:h-80 md:h-full rounded-xl overflow-hidden img-frame">
               <img src="assets/Rectangle 46.png" alt="Tala Prattoy Terracotta Sculpture Gallery" class="figma-img" />
             </div>
@@ -699,9 +684,7 @@
     </section>
 
 
-    <!-- ==========================================================================
-         11. TALA IN NEWS SECTION (Figma Screenshot 5)
-         ========================================================================== -->
+    
     <section id="news" class="py-20 md:py-28 bg-black border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -795,9 +778,7 @@
     </section>
 
 
-    <!-- ==========================================================================
-         12. FREQUENTLY ASKED QUESTIONS SECTION
-         ========================================================================== -->
+    
     <section id="faq" class="py-20 md:py-28 bg-[#080808] border-t border-white/5">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -907,9 +888,7 @@
     </section>
 
 
-    <!-- ==========================================================================
-         13. FOOTER SECTION (Figma Screenshot 5)
-         ========================================================================== -->
+   
     <footer id="contact" class="pt-20 pb-12 bg-[#121212] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -940,8 +919,7 @@
 
           <!-- Right Column: Navigation Columns (Product, Media Group, Sitemap, Contact) -->
           <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
-            
-            <!-- Column 1: Product -->
+       
             <div class="space-y-3">
               <h4 class="font-sans font-semibold text-xs text-white">Product</h4>
               <ul class="space-y-2 text-xs text-neutral-400">
@@ -951,7 +929,7 @@
               </ul>
             </div>
 
-            <!-- Column 2: Media Group -->
+      
             <div class="space-y-3">
               <h4 class="font-sans font-semibold text-xs text-white">Media Group</h4>
               <ul class="space-y-2 text-xs text-neutral-400">
@@ -961,7 +939,7 @@
               </ul>
             </div>
 
-            <!-- Column 3: Sitemap -->
+           
             <div class="space-y-3">
               <h4 class="font-sans font-semibold text-xs text-white">Sitemap</h4>
               <ul class="space-y-2 text-xs text-neutral-400">
@@ -971,7 +949,7 @@
               </ul>
             </div>
 
-            <!-- Column 4: Contact -->
+          
             <div class="space-y-3">
               <h4 class="font-sans font-semibold text-xs text-white">Contact</h4>
               <ul class="space-y-2 text-[11px] text-neutral-400">
@@ -994,7 +972,7 @@
 
         </div>
 
-        <!-- Footer Bottom Copyright Bar -->
+        
         <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <div>
             Copyright &copy; 2024 massArt, Designed & Developed Ethically by Ethical Den
@@ -1010,7 +988,7 @@
     </footer>
   </main>
 
-  <!-- JavaScript -->
+
   <script src="script.js"></script>
 </body>
 </html>

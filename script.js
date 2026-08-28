@@ -1,12 +1,5 @@
-/**
- * ==========================================================================
- * TALA PRATTOY - JAVASCRIPT
- * Full Figma Functionality: Nav, FAQ Accordion, Sliders & Interactions
- * ==========================================================================
- */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. MOBILE NAVIGATION TOGGLE
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const hamburgerIcon = document.getElementById('hamburger-icon');
@@ -68,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. STICKY NAVBAR BACKGROUND TRANSITION ON SCROLL
   function updateNavbar() {
     if (!navbar) return;
     if (window.scrollY > 30) {
@@ -82,15 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateNavbar, { passive: true });
   updateNavbar();
 
-  // 3. FAQ ACCORDION
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach((item, index) => {
     const header = item.querySelector('.faq-header');
     if (header) {
       header.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-        
-        // Optional: close other items for clean single accordion
+
         faqItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('active');
@@ -110,10 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. NEWS SLIDER & DOTS INTERACTION
   const newsTrack = document.getElementById('news-slider-track');
   const newsDots = document.querySelectorAll('.news-dot');
-  
+
   if (newsTrack && newsDots.length > 0) {
     newsDots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
@@ -153,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 5. AWARD CAROUSEL ARROWS
   const awardTrack = document.getElementById('award-slider-track');
   const awardPrevBtn = document.getElementById('award-prev-btn');
   const awardNextBtn = document.getElementById('award-next-btn');
@@ -171,7 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 6. DISCOVER TALA CAROUSEL DOTS
   const discoverDots = document.querySelectorAll('.discover-dot');
   if (discoverDots.length > 0) {
     discoverDots.forEach((dot, index) => {
@@ -186,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. SMOOTH SCROLL FOR ALL ANCHOR LINKS
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
@@ -205,7 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 8. NEWSLETTER FORM SUBMISSION
   const newsletterForm = document.getElementById('newsletter-form');
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
